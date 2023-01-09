@@ -48,30 +48,30 @@ class Main {
   System.out.println("Sexo: " + sexo);
   System.out.println("Nascimento: " + dataNascimento);
   System.out.println("Idade: " + calculateAge(dataNascimentoConvertida) + " " + "anos");
-  System.out.println("Peso: " + peso + " " + "N" );
-  System.out.println("Massa: " + massa + " " + "Kg" );
+  System.out.println("Peso: " + String.format("%.2f",peso) + " " + "N" );
+  System.out.println("Massa: " + String.format("%.2f",massa) + " " + "Kg" );
   if (imc < 17.00) {
-    System.out.println("IMC: " + imc + " " + "Muito abaixo do peso");
+    System.out.println("IMC: " + String.format("%.2f",imc) + " " + "Muito abaixo do peso");
   } else if (imc >= 17 && imc <= 18.49) {
-    System.out.println("IMC: " + imc + " " + "Abaixo do peso");
+    System.out.println("IMC: " + String.format("%.2f",imc) + " " + "Abaixo do peso");
   } else if (imc >= 18.50 && imc <= 24.99) {
-    System.out.println("IMC: " + imc + " " + "Abaixo do peso");
+    System.out.println("IMC: " + String.format("%.2f",imc) + " " + "Abaixo do peso");
   } else if (imc >= 25.00 && imc <= 29.99) {
-    System.out.println("IMC: " + imc + " " + "Acima do peso");
+    System.out.println("IMC: " + String.format("%.2f",imc) + " " + "Acima do peso");
   } else if (imc >= 30.00 && imc <= 34.99) {
-    System.out.println("IMC: " + imc + " " + "Obesidade I");
+    System.out.println("IMC: " + String.format("%.2f",imc) + " " + "Obesidade I");
   } else if (imc >= 35.00 && imc <= 39.99) {
-    System.out.println("IMC: " + imc + " " + "Obesidade II (severa)");
+    System.out.println("IMC: " + String.format("%.2f",imc) + " " + "Obesidade II (severa)");
   } else if (imc >= 40.00 ) {
-    System.out.println("IMC: " + imc + " " + "Obesidade III (mórbida)");
+    System.out.println("IMC: " + String.format("%.2f",imc) + " " + "Obesidade III (mórbida)");
   } else{
     System.out.println("Um erro ocorreu");
 }
   
   if (sexo.equals("M")) {
-    System.out.println("Peso Ideal: " + pesoIdealHomem + "Kg");
+    System.out.println("Peso Ideal: " + String.format("%.2f",pesoIdealHomem) + " " + "Kg");
   } else if (sexo.equals("F")) {
-    System.out.println("Peso Ideal: " + pesoIdealMulher + "Kg");
+    System.out.println("Peso Ideal: " + String.format("%.2f",pesoIdealMulher) +  " " +  "Kg");
   } else {
     System.out.println("Um erro ocorreu");
   }
