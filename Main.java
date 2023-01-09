@@ -24,13 +24,13 @@ class Main {
   nomePaciente = console.nextLine();
   System.out.print("Digite a data de nascimento do paciente no formato brasileiro (dd-mm-aaaa): ");
     
-	String dataNascimento = console.nextLine(); 
+  String dataNascimento = console.nextLine(); 
   DateTimeFormatter dataNascimentoFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy");
   LocalDate dataNascimentoConvertida =  LocalDate.parse(dataNascimento, dataNascimentoFormat);
-	System.out.print("Digite o sexo do paciente- M para masculino e F para feminino: ");
-	sexo = console.nextLine();
+  System.out.print("Digite o sexo do paciente- M para masculino e F para feminino: ");
+  sexo = console.nextLine();
   System.out.print("Digite a altura do paciente em metros ");
-	alturaPaciente = console.nextDouble();
+  alturaPaciente = console.nextDouble();
   System.out.print("Digite a massa do paciente em quilogramas: ");
   massa = console.nextDouble();
   console.close();
